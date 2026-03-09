@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faros Health — Insights Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 48px 24px;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0a2d5e;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .logo span { color: #00b0a0; }
+    .tagline {
+      font-size: 15px;
+      color: #5a6a7a;
+      margin-bottom: 48px;
+    }
+    .cards {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 800px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(10,45,94,0.10);
+      padding: 36px 32px;
+      width: 340px;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.2s, transform 0.2s;
+      border: 1.5px solid #e2e8f0;
+    }
+    .card:hover {
+      box-shadow: 0 8px 32px rgba(10,45,94,0.16);
+      transform: translateY(-3px);
+    }
+    .card-icon {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+    .card-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: #0a2d5e;
+      margin-bottom: 8px;
+    }
+    .card-desc {
+      font-size: 14px;
+      color: #5a6a7a;
+      line-height: 1.6;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 6px 14px;
+      background: #e8f4f2;
+      color: #00b0a0;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 20px;
+    }
+    .footer {
+      margin-top: 52px;
+      font-size: 13px;
+      color: #8a9ab0;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">Faros<span>Health</span></div>
+  <div class="tagline">Member Navigation Platform — Analytics Demo</div>
+
+  <div class="cards">
+    <a class="card" href="dashboard1.html">
+      <div class="card-icon">📊</div>
+      <div class="card-title">Cost Trend &amp; Platform Savings</div>
+      <div class="card-desc">
+        4-year plan spend trend, projected savings vs historical trajectory,
+        per-member cost by service category, and platform ROI summary.
+      </div>
+      <div class="badge">View Dashboard →</div>
+    </a>
+
+    <a class="card" href="dashboard2.html">
+      <div class="card-icon">🧭</div>
+      <div class="card-title">Member Navigation</div>
+      <div class="card-desc">
+        Member engagement funnel, in-network steerage rates, FMV benchmark
+        comparison, and platform vs non-platform cost outcomes.
+      </div>
+      <div class="badge">View Dashboard →</div>
+    </a>
+  </div>
+
+  <div class="footer">Synthetic demonstration data · Faros Health 2026</div>
+</body>
+</html>
